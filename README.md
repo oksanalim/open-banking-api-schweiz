@@ -1,6 +1,38 @@
 ## Open Banking Payment 
 
-**Sequenzdiagramm für Open Banking Payment**
+
+## **Use-Case-Diagramm für Open Banking Payment**
+
+### **Beschreibung**  
+Das Use-Case-Diagramm zeigt die wichtigsten Interaktionen, die ein Nutzer in der Payment-App durchführen kann. Es gibt einen Überblick darüber, welche Funktionen das System bereitstellt und welche Aktionen ein Nutzer ausführen kann.
+
+### **UML-Diagramm**
+![Use-Case-Diagramm](http://www.plantuml.com/plantuml/png/PT6zJiCm40Vm_PxYbDq3_LXGLRMK3GcGW8NjI2-9bUGIdS-L2EBDklN5I4HKBB5O_jk_EzloBXYfnRO1yzOmlWLs1ng7Uq-bKjkYmwUU1Uz8QYybFjDdos80b5kdc3r66rWpf33LAe1oRYJbs2kRhTltVOPVW1W3vnJ6dOTEhCCJQosNSr-m_3OutFn3mKYEI1yQ_zGYLUzKDL5Af1YAoxdIgrgcwbL90jNcEmadrePYWIG3-_BgLwb_yNd5Mh6tuFRHAXRpXHyywtZMNB26Ru3fqUZSThfy6XPfMAPX1UF2F5_ZBMush4MdHrRRRW5sBCVfFtu0)  
+
+
+### **Haupt-Use-Cases und ihre Beschreibung**
+| **Use-Case**                  | **Beschreibung** |
+|--------------------------------|----------------|
+| **Konto verknüpfen** (`UC1`)   | Der Nutzer authentifiziert sich über OAuth2 und verbindet sein Bankkonto mit der Payment-App. |
+| **Kontostand abrufen** (`UC2`) | Der Nutzer kann den aktuellen Kontostand seines verknüpften Kontos abrufen. |
+| **Zahlung ausführen** (`UC3`)  | Der Nutzer kann eine neue Zahlung an einen Empfänger senden. |
+| **Transaktionsverlauf anzeigen** (`UC4`) | Der Nutzer kann eine Liste seiner bisherigen Transaktionen einsehen. |
+| **Sicherheits-Authentifizierung** (`UC5`) | Stellt sicher, dass der Nutzer sich korrekt authentifiziert, bevor sensible Aktionen (z. B. Zahlungen) durchgeführt werden können. |
+
+
+### **Beziehungen zwischen den Use-Cases**
+- **Der Nutzer kann verschiedene Aktionen ausführen**, wie z. B. **Konto verknüpfen, Kontostand abrufen, Zahlung ausführen und Transaktionsverlauf einsehen**.  
+- **Die Sicherheits-Authentifizierung (`UC5`) ist eine Voraussetzung für die Zahlung (`UC3`)**, um sicherzustellen, dass der Nutzer autorisiert ist.  
+- **Die Payment-App verwaltet die Interaktion mit der Open-Banking-API**, um die gewünschten Funktionen bereitzustellen.  
+
+### **Warum ist dieses Use-Case-Diagramm wichtig?**
+- Es visualisiert die **wichtigsten Funktionen** der Payment-App.  
+- Es zeigt, wie **der Nutzer mit dem System interagiert**.  
+- Es hilft Entwicklern und Analysten, **die Anforderungen an die App besser zu verstehen**.  
+- Es verdeutlicht, dass **Sicherheits-Authentifizierung eine zentrale Rolle spielt**.  
+
+
+## **Sequenzdiagramm für Open Banking Payment**
 
 ### **Beschreibung**
 Dieses Sequenzdiagramm zeigt den Ablauf einer Zahlung über eine Open-Banking-API. Dabei interagieren vier Hauptakteure:
