@@ -1,5 +1,7 @@
 ## Open Banking Payment 
 
+Über das Projekt
+Dieses Projekt zeigt eine modellierte Architektur für eine Open-Banking-Payment-App mit UML-Diagrammen und API-Spezifikation. Ziel ist es, eine Fintech-Lösung für sichere Zahlungsabwicklung und Bankkontenverwaltung über Open-Banking-APIs zu visualisieren und zu dokumentieren.
 
 ## **Use-Case-Diagramm für Open Banking Payment**
 
