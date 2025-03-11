@@ -1,0 +1,20 @@
+@startuml
+title Use-Case-Diagramm - Open Banking Payment
+
+actor "Nutzer" as User
+
+rectangle "Payment-App" {
+  usecase "Konto verknüpfen" as UC1
+  usecase "Kontostand abrufen" as UC2
+  usecase "Zahlung ausführen" as UC3
+  usecase "Transaktionsverlauf anzeigen" as UC4
+  usecase "Sicherheits-Authentifizierung" as UC5
+}
+
+User --> UC1
+User --> UC2
+User --> UC3
+User --> UC4
+UC3 --> UC5 : <<erfordert>>
+
+@enduml
