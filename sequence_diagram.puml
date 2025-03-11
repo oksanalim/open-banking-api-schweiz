@@ -1,0 +1,32 @@
+@startuml
+title Open Banking Payment - Sequenzdiagramm
+
+actor Nutzer
+participant "Payment-App" as App
+participant "Open Banking API" as API
+participant "Bankensystem" as Bank
+
+== Authentifizierung via OAuth2 ==
+Nutzer -> App: Anmeldung starten
+App -> API: OAuth2 Authentifizierung anfordern
+API -> Nutzer: Login bei der Bank erforderlich
+Nutzer -> API: Einloggen & Zustimmung geben
+API --> App: OAuth2 Token übermitteln
+
+== Kontostand abrufen ==
+Nutzer -> App: Kontostand anzeigen
+App -> API: GET /accounts (mit Token)
+API -> Bank: Kontoinformationen abrufen
+Bank --> API: Kontodaten liefern
+API --> App: Kontodaten übermitteln
+App --> Nutzer: Kontostand anzeigen
+
+== Zahlung initiieren ==
+Nutzer -> App: Neue Zahlung starten (Empfänger, Betrag)
+App -> API: POST /payments (mit Token)
+API -> Bank: Zahlung beauftragen
+Bank --> API: Zahlungsstatus zurückgeben
+API --> App: Zahlungsbestätigung
+App --> Nutzer: Zahlungsstatus anzeigen
+
+@enduml
