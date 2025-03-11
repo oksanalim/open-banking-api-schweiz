@@ -1,0 +1,27 @@
+@startuml
+title BPMN: Zahlung via Open Banking API
+
+start
+:Zahlungsdetails eingeben;
+:Zahlungsdetails validieren;
+
+if (Details gültig?) then (ja)
+  :OAuth2-Authentifizierung prüfen;
+  if (OAuth2-Token gültig?) then (ja)
+    :Zahlung an Bank senden;
+    :Bank prüft Guthaben;
+    if (Guthaben ausreichend?) then (ja)
+      :Zahlung durchführen;
+      :Zahlungsbestätigung an Nutzer senden;
+    else (nein)
+      :Fehlermeldung: Nicht genug Guthaben;
+    endif
+  else (nein)
+    :Fehlermeldung: Authentifizierung fehlgeschlagen;
+  endif
+else (nein)
+  :Fehlermeldung: Zahlungsdaten ungültig;
+endif
+
+stop
+@enduml
