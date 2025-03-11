@@ -107,7 +107,50 @@ Das Klassendiagramm modelliert die wichtigsten Datenstrukturen und deren Beziehu
 - Es zeigt die **Datenstruktur hinter einer Open-Banking-Payment-App**.  
 - Es verdeutlicht die **Zusammenhänge zwischen Nutzer, Konto und Transaktionen**.  
 - Es hilft Entwicklern, **die Systemarchitektur schnell zu verstehen**.  
-- Es unterstützt die Planung und Erweiterung der API-Integration.  
+- Es unterstützt die Planung und Erweiterung der API-Integration.
+
+
+## **BPMN-Diagramm: Zahlung via Open Banking API**
+
+### **Beschreibung**
+Das BPMN-Diagramm visualisiert den **Geschäftsprozess zur Durchführung einer Zahlung über eine Open-Banking-API**. Es zeigt Schritt für Schritt, wie eine Zahlung initiiert, validiert und verarbeitet wird, einschließlich aller wesentlichen Entscheidungen und Fehlerbehandlungen.
+
+---
+
+### **BPMN-Diagramm**
+![BPMN Zahlungsprozess](<https://www.plantuml.com/plantuml/png/NP4nSl8m58HxdMAhVw3uBs0N0OQ4IGecJPfqp_6phB7yy4ZF59o7Oz3vOh45U0ZbQlRRNKchg1IqRxrHfvwnRjGTdGvdZQKZ6wXjCtnJxNknaGfFVMLCOaosx_N40TOLYjUsguQps57_muOra0KxoKssxZeSoRlIST1xL6vSXSMMb0ND8GHkz6K9hKUv-A2b0H8NMKgU8P1WGzByNt--vvDb4kZ2SAaKM_vfKZ0mHUzOXeiTSUnwhQbWUSg_umN7wRREFcm3RlqdVZYFi_LcOXyPYpqxMJuZRrnx3Xc-nDw7S9od95XALvc_4TaLQzcNOqMYXuiV2ndfgN9pfQ8UEcDMevW-xXS0>)
+
+---
+
+### **Prozessschritte im Detail**
+| Schritt | Beschreibung |
+|---------|--------------|
+| **Zahlungsdetails eingeben** | Der Nutzer gibt Empfänger und Betrag der Zahlung ein. |
+| **Zahlungsdetails validieren** | Die App prüft die eingegebenen Daten auf Vollständigkeit und Korrektheit (z. B. IBAN-Format). |
+| **OAuth2-Authentifizierung prüfen** | Die App prüft, ob der Nutzer über einen gültigen OAuth2-Token verfügt. |
+| **Zahlung an Bank senden** | Die Zahlungsdaten werden über die Open-Banking-API an das Bankensystem weitergeleitet. |
+| **Bank prüft Guthaben** | Die Bank kontrolliert, ob ausreichend Guthaben vorhanden ist. |
+| **Zahlung durchführen** *(Erfolgsfall)* | Bei ausreichendem Guthaben wird die Zahlung ausgeführt. |
+| **Zahlungsbestätigung an Nutzer senden** *(Erfolgsfall)* | Der Nutzer erhält eine Bestätigung der erfolgreichen Zahlung. |
+
+---
+
+### **Mögliche Fehlerfälle**
+- **Ungültige Zahlungsdaten** → Fehlermeldung an Nutzer: „Zahlungsdaten ungültig“.
+- **OAuth2-Authentifizierung fehlgeschlagen** → Fehlermeldung an Nutzer: „Authentifizierung fehlgeschlagen“.
+- **Nicht genug Guthaben** → Fehlermeldung an Nutzer: „Nicht genug Guthaben“.
+
+
+### **Warum ist dieses BPMN-Diagramm wichtig?**
+- **Klarheit über den Zahlungsprozess** für Analysten, Entwickler und Stakeholder.  
+- Schnelle **Identifikation von Fehlerstellen** und **Optimierungspotenzialen** im Prozess.  
+- **Basis für Anforderungen** bei der Implementierung einer Open-Banking-Schnittstelle.
+
+
+
+
+
+
 
 
 
