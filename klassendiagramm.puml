@@ -1,0 +1,43 @@
+@startuml
+title Open Banking Payment - Klassendiagramm
+
+class User {
+  +userID: String
+  +name: String
+  +email: String
+  +accounts: List<Account>
+}
+
+class Account {
+  +accountID: String
+  +iban: String
+  +bank: String
+  +balance: Float
+  +transactions: List<Transaction>
+}
+
+class Transaction {
+  +transactionID: String
+  +amount: Float
+  +recipient: String
+  +status: String
+  +executePayment(): Boolean
+}
+
+class PaymentService {
+  +initiatePayment(amount: Float, recipient: String)
+  +getAccountBalance(): Float
+}
+
+class BankAPI {
+  +authenticateUser(): String
+  +fetchAccounts(): List<Account>
+  +sendPayment(amount: Float, recipient: String): String
+}
+
+User "1" -- "n" Account
+Account "1" -- "n" Transaction
+PaymentService ..> BankAPI : nutzt
+Transaction ..> PaymentService : ruft auf
+
+@enduml
