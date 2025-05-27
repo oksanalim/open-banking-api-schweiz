@@ -68,10 +68,10 @@ Dieses Sequenzdiagramm zeigt den Ablauf einer Zahlung über eine Open-Banking-AP
 ![Sequenzdiagramm](https://www.plantuml.com/plantuml/png/VPB1QXin48RlUeeXXv90JQ57WqiSCAMqn8Rab9jsTrOU8essqgWGFqyU8pU_MAMr5TYDoKcizEd_v_-rjr5qaEIi4XABi1sGuKxpCx61dNvno08BUC2_2VdGaJP1EwUKRiK7k4zomA26B44j3JgpL-TBY_KmN86EaDSfCB5OxtuLggnJgW38yIKAkaACDvHQhM2TP8yirDE1CAGiyeyqRClsTrYjr6aeMFmerajOiqFR5MoCYgpoTZdDbijwxQEcvjw73WEhp1Ny9Bk4FzuGGuC4-NIS2Z2SM4ljljfNWmsnzSOWmnTuIb78kI9liC6pT1tqFCgZpxdX-DPWS2I2biVKlpsBpmcu0zs4r2D_p3g1-81aPcb_RXxXcsvRdrWYN6VzazrD3LdYd6Me5E2qa6Vawgd6l8kgDuATbWnOmXx3B58zdmSQPthlzFBS9VIJtjlI5Z494OQBeUynOINh6yFrnWtzyPKDXgzmXnAqkPbKiTi-v2w6yhD-saKLRb2dliZCIwX4pDQI8XnIEBwrpnSUk88DHZc-2fdyCQzYhlPUnorobvpz3m00)
 
 ### **Warum ist dieses Diagramm wichtig?**
-- Es visualisiert die **Interaktion zwischen Nutzer, App, API und Bank**.
-- Es zeigt die **zentrale Rolle von OAuth2** für sichere Authentifizierung.
-- Es verdeutlicht die **API-Aufrufe**, die für Open Banking unerlässlich sind.
-- Es hilft Entwicklern und Analysten, **die Systemabläufe zu verstehen und zu optimieren**.
+- Es visualisiert die Interaktion zwischen Nutzer, App, API und Bank.
+- Es zeigt die zentrale Rolle von OAuth2für sichere Authentifizierung.
+- Es verdeutlicht die API-Aufrufe, die für Open Banking unerlässlich sind.
+- Es hilft Entwicklern und Analysten, die Systemabläufe zu verstehen und zu optimieren.
 
 __Klassendiagramm__
 
@@ -104,16 +104,16 @@ Das Klassendiagramm modelliert die wichtigsten Datenstrukturen und deren Beziehu
 
 
 ### **Warum ist dieses Klassendiagramm wichtig?**
-- Es zeigt die **Datenstruktur hinter einer Open-Banking-Payment-App**.  
-- Es verdeutlicht die **Zusammenhänge zwischen Nutzer, Konto und Transaktionen**.  
-- Es hilft Entwicklern, **die Systemarchitektur schnell zu verstehen**.  
+- Es zeigt die Datenstruktur hinter einer Open-Banking-Payment-App.  
+- Es verdeutlicht die Zusammenhänge zwischen Nutzer, Konto und Transaktionen.  
+- Es hilft Entwicklern, die Systemarchitektur schnell zu verstehen.  
 - Es unterstützt die Planung und Erweiterung der API-Integration.
 
 
 ## **BPMN-Diagramm: Zahlung via Open Banking API**
 
 ### **Beschreibung**
-Das BPMN-Diagramm visualisiert den **Geschäftsprozess zur Durchführung einer Zahlung über eine Open-Banking-API**. Es zeigt Schritt für Schritt, wie eine Zahlung initiiert, validiert und verarbeitet wird, einschließlich aller wesentlichen Entscheidungen und Fehlerbehandlungen.
+Das BPMN-Diagramm visualisiert den Geschäftsprozess zur Durchführung einer Zahlung über eine Open-Banking-API. Es zeigt Schritt für Schritt, wie eine Zahlung initiiert, validiert und verarbeitet wird, einschliesslich aller wesentlichen Entscheidungen und Fehlerbehandlungen.
 
 ---
 
@@ -141,10 +141,6 @@ Das BPMN-Diagramm visualisiert den **Geschäftsprozess zur Durchführung einer Z
 - **Nicht genug Guthaben** → Fehlermeldung an Nutzer: „Nicht genug Guthaben“.
 
 
-### **Warum ist dieses BPMN-Diagramm wichtig?**
-- **Klarheit über den Zahlungsprozess** für Analysten, Entwickler und Stakeholder.  
-- Schnelle **Identifikation von Fehlerstellen** und **Optimierungspotenzialen** im Prozess.  
-- **Basis für Anforderungen** bei der Implementierung einer Open-Banking-Schnittstelle.
 
 
 
