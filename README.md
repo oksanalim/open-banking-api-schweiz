@@ -33,8 +33,10 @@ Das Use-Case-Diagramm zeigt die wichtigsten Interaktionen, die ein Nutzer in der
 - Es hilft Entwicklern und Analysten, **die Anforderungen an die App besser zu verstehen**.  
 - Es verdeutlicht, dass **Sicherheits-Authentifizierung eine zentrale Rolle spielt**.  
 
+## **Aktivitätsdiagramm für Open-Banking-Payment**
 
-## **Sequenzdiagramm für Open Banking Payment**
+![BPMN Zahlungsprozess](<https://www.plantuml.com/plantuml/png/NP4nSl8m58HxdMAhVw3uBs0N0OQ4IGecJPfqp_6phB7yy4ZF59o7Oz3vOh45U0ZbQlRRNKchg1IqRxrHfvwnRjGTdGvdZQKZ6wXjCtnJxNknaGfFVMLCOaosx_N40TOLYjUsguQps57_muOra0KxoKssxZeSoRlIST1xL6vSXSMMb0ND8GHkz6K9hKUv-A2b0H8NMKgU8P1WGzByNt--vvDb4kZ2SAaKM_vfKZ0mHUzOXeiTSUnwhQbWUSg_umN7wRREFcm3RlqdVZYFi_LcOXyPYpqxMJuZRrnx3Xc-nDw7S9od95XALvc_4TaLQzcNOqMYXuiV2ndfgN9pfQ8UEcDMevW-xXS0>)
+## **Sequenzdiagramm für Open-Banking-Payment**
 
 ### **Beschreibung**
 Dieses Sequenzdiagramm zeigt den Ablauf einer Zahlung über eine Open-Banking-API. Dabei interagieren vier Hauptakteure:
@@ -118,7 +120,7 @@ Das BPMN-Diagramm visualisiert den Geschäftsprozess zur Durchführung einer Zah
 ---
 
 ### **BPMN-Diagramm**
-![BPMN Zahlungsprozess](<https://www.plantuml.com/plantuml/png/NP4nSl8m58HxdMAhVw3uBs0N0OQ4IGecJPfqp_6phB7yy4ZF59o7Oz3vOh45U0ZbQlRRNKchg1IqRxrHfvwnRjGTdGvdZQKZ6wXjCtnJxNknaGfFVMLCOaosx_N40TOLYjUsguQps57_muOra0KxoKssxZeSoRlIST1xL6vSXSMMb0ND8GHkz6K9hKUv-A2b0H8NMKgU8P1WGzByNt--vvDb4kZ2SAaKM_vfKZ0mHUzOXeiTSUnwhQbWUSg_umN7wRREFcm3RlqdVZYFi_LcOXyPYpqxMJuZRrnx3Xc-nDw7S9od95XALvc_4TaLQzcNOqMYXuiV2ndfgN9pfQ8UEcDMevW-xXS0>)
+
 
 ---
 
